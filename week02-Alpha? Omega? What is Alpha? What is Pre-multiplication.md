@@ -1,4 +1,4 @@
-[2D digital compositing] week01_Alpha? Omega? What is Alpha? What is Pre-multiplication
+[2D digital compositing] week02_Alpha? Omega? What is Alpha? What is Pre-multiplication
 =====================================================================================
 
 
@@ -8,8 +8,8 @@
 
 Digital
 ------------------
-digit- 수, 숫자 / al-
-digital의 어원_손가락을 뜻하는 라틴어 낱말 digit에서 나온 것으로, 숫자를 세는 데 쓰인다.
+digit - 수, 숫자 
+digital의 어원 - 손가락을 뜻하는 라틴어 낱말 digit에서 나온 것으로, 숫자를 세는 데 쓰인다.
 (https://ko.wikipedia.org/wiki/%EB%94%94%EC%A7%80%ED%84%B8)
 
 image = digits ?
@@ -31,6 +31,9 @@ RGB(Red, Green, Blue)라는 color space를 digital에서는 기본적으로 가�
 CMYK(Cyan, Magenta, Yellow, Key/Black)은 인쇄를 기반으로 하는 color space이다.
 (https://99designs.com/blog/tips/correct-file-formats-rgb-and-cmyk/)
   
+![primary-colors](https://user-images.githubusercontent.com/91205381/134563646-7b08220a-aeee-4fff-be18-5e6046a058cc.png)
+
+https://www.google.co.kr/url?sa=i&url=https%3A%2F%2Fyeun.github.io%2F2016%2F03%2F21%2Frgb-and-hsb.html&psig=AOvVaw1qNDm_RHGkMIjaBx4AhI6E&ust=1632508065622000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMD-hM_clfMCFQAAAAAdAAAAABAD
 
 -어떻게 우리의 시각에 색상이 나타날까?        
   
