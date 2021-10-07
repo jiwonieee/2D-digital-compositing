@@ -55,15 +55,40 @@ RGB 색공간의 핵심요소
 Gamma
 =====
 Gamma란?
-디스플레이에 입력되는 신호의 밝기(Gray Level)와 화면상에 나타나는 영상의 휘도 간 상관 관계를 결정하는 수치
-감마값에 따라 같은 화면이라도 표현되는 밝기 톤의 차이가 느껴진다
-감마값이 1인 경우는 입력과 출력의 밝기가 같지만, 1보다 크면 중·저계조 영역에서 화면이 좀 더 어둡게 표현이 되고, 반대로 1보다 작으면 밝게 표현이 된다
-https://news.samsungdisplay.com/wp-content/uploads/2017/05/1-32.jpg
+-디스플레이에 입력되는 신호의 밝기(Gray Level)와 화면상에 나타나는 영상의 휘도 간 상관 관계를 결정하는 수치
+-감마값에 따라 같은 화면이라도 표현되는 밝기 톤의 차이가 느껴진다
+-감마값이 1인 경우는 입력과 출력의 밝기가 같지만, 1보다 크면 중·저계조 영역에서 화면이 좀 더 어둡게 표현이 되고, 반대로 1보다 작으면 밝게 표현이 된다 (1보다 크면 어둡게 1보다 작으면 밝게 표현)
 (출처 : https://news.samsungdisplay.com/1869/)
 
+Linear workflow
+================
+Linear workflow란?
+- 모든 그래픽 작업이 선형 색 공간에서 이루어지는 방식
+- 블랜딩을 한다고 가정했을 때 선형 색 공간에서의 블랜딩은 밝은 부분이 자연스럽게 합쳐지지만, 감마 색 공간에서의 블랜딩은 밝은 부분이 지나치고 경계가 생긴다
+  그 이유는 감마 색 공간에서의 이미지들은 한 번 밝아진 상태의 이미지들이고, 선형 색 공간에서의 이미지들은 밝아진 이미지에 역으로 감마 보정을 가해 원래 색상과 밝기로 되돌린 이미지들이기 때문이다
+  그래서 선형 색 공간에서 작업 하는 것이 권장되며 이를 Linear workflow 라고 하는 것이다
+(출처 : https://kyoungwhankim.github.io/ko/blog/color_linearworkflow/)
 
+Alpha
+======
+Alpha란?
+-각 화소에 대해 색상 표현의 데이터로부터 분리한 보조 데이터를 일컫는다
+-알파 채널은 각 픽셀의 투명도를 정한 것이다
 
+Premult
+========
+"non-premultiplied alpha"
+non-premultiplied alpha는 straight alpha 또는 unassociated alpha라고 부른다
+straight alpha 방식의 RGBA는, 알파 값만이 화소의 투명한 정도를 나타내며, RGB 각각의 값은 투명도와 관계 없이 빨강, 초록, 파랑의 강도를 표현한다
 
+"premultiplied alpha"
+premultiplied alpha는 associated alpha라고도 부르며, 이미지의 필터링과 혼합에 적합한 표현 방식이다
+premultiplied alpha 방식의 RGBA 인코딩은, 알파 값을 RGB에 미리 곱해 둔다
+premultiplied alpha 방식의 RGBA에서 RGB의 값은 그 자체만으로도 색상과 더불어 이미 투명도를 반영하고 있으며, 알파 값은 복잡한 그래픽 처리를 위해서 덤으로 딸려 들어오는 것에 불과하다.
+이 방식의 한 가지 특징은 RGB 각각의 값이 덤으로 얹어 주는 알파의 값보다 항상 작거나 같다
+(출처 : https://nanite.tistory.com/98)
+
+ 
 
 
 
