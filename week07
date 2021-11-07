@@ -15,4 +15,6 @@ Transform (match-move) - 클립이 일치하도록 제어 사전 설정이 있�
 -------------
 앞서 말한 1,2,3point track과 같이 하는 것도 가능하고, 
 Transform (match-move)노드 대신에  CornerPin2D (use current frame) - 현재 프레임을 참조로 사용하여 
-상대 변환에 따라 이미지를 왜곡하는 표현식 연결된 CornerPin2D 노드
+상대 변환에 따라 이미지를 왜곡하는 표현식 연결된 CornerPin2D 노드를 만들어 트래킹하는 것도 가능하다.
+
++ 자연스러운 트래킹을 위해 blur를 사용하거나 노이즈르 원래 영상과 어우러지도록 만들어주기도한다.
