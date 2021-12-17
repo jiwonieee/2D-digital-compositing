@@ -41,7 +41,7 @@ https://www.google.co.kr/url?sa=i&url=https%3A%2F%2Fyeun.github.io%2F2016%2F03%2
 예를 들어 노란색이 우리 시각에 보인다고 하면, RGB에서 B는 흡수되고 R과 G가 반사되어 우리 눈에 노란색으로 보이게 되는 것이다.
 (https://www.scratchapixel.com/lessons/digital-imaging/colors/introduction)
  
-color, alpha, color space가 CG작업에서는 어떻게 사용되고 있는가?
--------------------------------------------------------
+
+
   
 
